@@ -47,11 +47,17 @@ fractal.web.set('static.path', path.join(__dirname, 'dist'));
 fractal.web.set('builder.dest', path.join(__dirname, 'build'));
 
 /**
+ * SERVER
+ */
+fractal.web.set('server.sync', true);
+
+/**
  * THEME
  */
-const theme = mandelbrot({
+const mono = require('mono-fractal');
+
+const theme = mono({
   nav: ['docs', 'components'],
-  skin: 'lime',
 });
 
 fractal.web.theme(theme);

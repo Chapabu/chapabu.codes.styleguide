@@ -155,7 +155,7 @@
     lodash "^4.12.0"
     promised-handlebars "^2.0.0"
 
-"@frctl/mandelbrot@^1.1.0":
+"@frctl/mandelbrot@^1.1.0", "@frctl/mandelbrot@^1.2.0":
   version "1.2.1"
   resolved "https://registry.yarnpkg.com/@frctl/mandelbrot/-/mandelbrot-1.2.1.tgz#7e9e84a5a51b8c601e7ff502c3ecd40ac9eecf10"
   integrity sha512-SC4sGCNG7hwGMdEHJhOHy6R24STyDaAY2tM7AZQNat46LhPRUg77qrC6tvcO7YRKnKOyHas3QvJhx8WdXwhv1Q==
@@ -5584,6 +5584,14 @@ modify-values@^1.0.0:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/modify-values/-/modify-values-1.0.1.tgz#b3939fa605546474e3e3e3c63d64bd43b4ee6022"
   integrity sha512-xV2bxeN6F7oYjZWTe/YPAy6MN2M+sL4u/Rlm2AHCIVGfo2p1yGmBHQ6vHehl4bRTZBdHu3TSkWdYgkwpYzAGSw==
+
+mono-fractal@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/mono-fractal/-/mono-fractal-1.0.0.tgz#10e78560657626bb8ddda595af3845d24b5fad53"
+  integrity sha512-InEMirwimKKjM+JoTX7lqNX24UmGpQLzap6o4T0kUZ7YiI2ErH1IEcO8gVbUCxCURiSbiLaWQ5MP04Ro711JMg==
+  dependencies:
+    "@frctl/mandelbrot" "^1.2.0"
+    lodash "^4.17.15"
 
 moo-server@*, moo-server@1.3.x:
   version "1.3.0"
