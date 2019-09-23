@@ -1,0 +1,15 @@
+{
+  "name": "@chapabu/codes.design-system",
+  "version": "1.0.0",
+  "description": "Vanilla design system for chapabu.codes.",
+  "author": "Matt Chapman <chapabu101@gmail.com>",
+  "homepage": "https://github.com/Chapabu/chapabu.codes#readme",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Chapabu/chapabu.codes.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Chapabu/chapabu.codes/issues"
+  }
+}
