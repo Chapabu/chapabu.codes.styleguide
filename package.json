@@ -1,5 +1,5 @@
 {
-  "name": "@chapabu/chapabu.codes-root",
+  "name": "@chapabu/codes.root",
   "version": "1.0.0",
   "description": "Monorepo for personal site.",
   "main": "index.js",
