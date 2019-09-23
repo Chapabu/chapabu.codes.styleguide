@@ -1,8 +1,14 @@
 /* eslint-env node */
 module.exports = {
-  // prettier-ignore
   plugins: [
     require('postcss-import'),
-    require('cssnano')
-  ]
+    require('postcss-preset-env')({
+      /* Only use safe features + nesting */
+      stage: 3,
+      features: {
+        'nesting-rules': true,
+      },
+    }),
+    require('cssnano'),
+  ],
 };
