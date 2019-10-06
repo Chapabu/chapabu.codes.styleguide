@@ -11,29 +11,17 @@ fractal.set('project.title', 'Chapabu.codes');
 /**
  * TEMPLATE ENGINE
  */
-const twig = require('@frctl/twig')({
-  functions: {
-    modify(baseClass, modifiers = []) {
-      // Ensure we have an array of modifiers.
-      const modifiersArray = Array.isArray(modifiers) ? modifiers : [modifiers];
-
-      // Loop over them and prepend the baseclass.
-      const classArray = modifiersArray.map(modifier => `${baseClass}--${modifier}`);
-      classArray.unshift(baseClass);
-      return classArray.join(' ');
-    },
-  },
-});
+const twig = require('@frctl/twig')();
 
 fractal.components.engine(twig);
 fractal.components.set('ext', '.twig');
-// We manually set this as our base template lives under the _fractal subdirectory.
-fractal.components.set('default.preview', '@preview');
+// fractal.components.set('default.preview', '@preview');
 
 /**
  * SOURCES
  */
 fractal.components.set('path', path.join(__dirname, 'src/components'));
+fractal.web.set('static.mount', '/assets');
 
 // Twig doesn't work for documentation pages, so we'll leave it as Nunjucks.
 // @see https://github.com/frctl/twig/issues/19
@@ -54,9 +42,8 @@ fractal.web.set('server.sync', true);
 /**
  * THEME
  */
-const mono = require('mono-fractal');
 
-const theme = mono({
+const theme = mandelbrot({
   nav: ['docs', 'components'],
 });
 
