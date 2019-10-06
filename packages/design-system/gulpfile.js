@@ -6,3 +6,5 @@ Object.values(styleTasks).forEach(task);
 task('default', () => {
   styleTasks.watchStyles();
 });
+
+task('build', parallel(styleTasks.buildStyles));
