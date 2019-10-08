@@ -1,0 +1,30 @@
+// -----------------------------------------------------------------------------
+// This file contains default project variables.
+// -----------------------------------------------------------------------------
+
+/**
+ * CONTENTS
+ *
+ * 00. Vendor         - #VENDOR
+ * 01. Typography     - #TYPOGRAPHY
+ * 02. Colours        - #COLOURS
+ */
+
+///
+/// #VENDOR
+///
+
+$bourbon: (
+  'modular-scale-base': 1.125em,
+  'modular-scale-ratio': $major-third,
+);
+
+///
+/// #TYPOGRAPHY
+///
+$f-family-raleway: 'Raleway', $font-stack-helvetica;
+$scale-100: modular-scale(-1);
+$scale-200: modular-scale(0);
+$scale-300: modular-scale(1);
+$scale-400: modular-scale(2);
+$scale-500: modular-scale(3);
