@@ -26,7 +26,7 @@
   },
   "devDependencies": {
     "@chapabu/stylelint": "^1.0.0",
-    "@frctl/fractal": "^1.2.0",
+    "@frctl/fractal": "^1.2.1-beta.1",
     "@frctl/nunjucks": "^2.0.1",
     "@frctl/twig": "^1.0.0-beta.5",
     "bourbon": "^6.0.0",
@@ -51,7 +51,5 @@
     "prettier": "^1.18.2",
     "stylelint": "^10.0.0"
   },
-  "dependencies": {
-    "@frctl/fractal": "^1.2.1-beta.1"
-  }
+  "dependencies": {}
 }
