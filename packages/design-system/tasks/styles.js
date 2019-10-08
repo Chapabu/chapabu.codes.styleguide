@@ -3,6 +3,7 @@ const sourcemaps = require('gulp-sourcemaps');
 const postcss = require('gulp-postcss');
 const sass = require('gulp-sass');
 const stylelint = require('gulp-stylelint');
+const flatten = require('gulp-flatten');
 
 const STYLE_GLOB = './src/**/*.scss';
 
@@ -20,10 +21,15 @@ lintStyles.displayName = 'styles:lint';
 const compileStyles = () => {
   return src(STYLE_GLOB)
     .pipe(sourcemaps.init())
-    .pipe(sass().on('error', sass.logError))
+    .pipe(
+      sass({
+        includePaths: [require('bourbon').includePaths],
+      }).on('error', sass.logError)
+    )
     .pipe(postcss())
+    .pipe(flatten())
     .pipe(sourcemaps.write('.'))
-    .pipe(dest('./dist/styles'));
+    .pipe(dest('./dist/assets/styles'));
 };
 
 compileStyles.displayName = 'styles:compile';
