@@ -214,10 +214,58 @@
     unique-filename "^1.1.1"
     which "^1.3.1"
 
-"@frctl/fractal@^1.1.0-alpha.0", "@frctl/fractal@^1.2.0":
+"@frctl/fractal@^1.1.0-alpha.0":
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/@frctl/fractal/-/fractal-1.2.0.tgz#43fbefd47a03f849dc8698da06024c93fa0ee562"
   integrity sha512-2GuwhMy2jUXjmHWin8aklPJPD9EmPFBaSaOXDPMz2xJZn290h+G/hIjb44ufeG1JqOHvIUP5VjUABTw8onUDhA==
+  dependencies:
+    "@allmarkedup/fang" "^1.0.0"
+    "@frctl/handlebars" "^1.1.3"
+    "@frctl/mandelbrot" "^1.1.0"
+    anymatch "^1.3.0"
+    bluebird "^3.5.2"
+    browser-sync "^2.26.4"
+    chalk "^1.1.3"
+    chokidar "^1.6.0"
+    cli-table3 "^0.5.0"
+    co "^4.6.0"
+    columnify "^1.5.4"
+    diff "^3.5.0"
+    express "^4.14.0"
+    fs-extra "^0.30.0"
+    globby "^6.0.0"
+    gray-matter "^2.0.2"
+    handlebars "^4.0.13"
+    highlight.js "^9.5.0"
+    inquirer "^1.1.2"
+    istextorbinary "^2.1.0"
+    js-beautify "1.6.14"
+    js-yaml "^3.13.1"
+    liftoff "^2.3.0"
+    lodash "^4.17.11"
+    log-update "^1.0.2"
+    marked "^0.6.2"
+    mime "^1.3.4"
+    minimist "^1.2.0"
+    mixwith "^0.1.1"
+    mocha "^5.0.3"
+    nunjucks "^3.1.3"
+    path-to-regexp "^1.5.3"
+    portscanner "^1.0.0"
+    readable-stream "^2.1.4"
+    require-all "^2.0.0"
+    semver "^5.3.0"
+    sinon "^3.2.1"
+    snyk "^1.124.1"
+    throat "^3.0.0"
+    update-notifier "^1.0.2"
+    vinyl "^1.2.0"
+    vorpal "^1.12.0"
+
+"@frctl/fractal@^1.2.1-beta.1":
+  version "1.2.1-beta.1"
+  resolved "https://registry.yarnpkg.com/@frctl/fractal/-/fractal-1.2.1-beta.1.tgz#81e829c677ddcfa5cac384b1490a5b316cfe2403"
+  integrity sha512-mcdPtAwlHdOu+w4Shril9P5FmQKNkl6iFyTn64Iu++ORDCNG9V4C69ArIKJnf5e1GWKJvJ/CXcgR509Q3RQJPQ==
   dependencies:
     "@allmarkedup/fang" "^1.0.0"
     "@frctl/handlebars" "^1.1.3"
@@ -1344,6 +1392,13 @@ ansi-colors@^1.0.1:
   dependencies:
     ansi-wrap "^0.1.0"
 
+ansi-cyan@^0.1.1:
+  version "0.1.1"
+  resolved "https://registry.yarnpkg.com/ansi-cyan/-/ansi-cyan-0.1.1.tgz#538ae528af8982f28ae30d86f2f17456d2609873"
+  integrity sha1-U4rlKK+JgvKK4w2G8vF0VtJgmHM=
+  dependencies:
+    ansi-wrap "0.1.0"
+
 ansi-escapes@3.2.0, ansi-escapes@^3.2.0:
   version "3.2.0"
   resolved "https://registry.yarnpkg.com/ansi-escapes/-/ansi-escapes-3.2.0.tgz#8780b98ff9dbf5638152d1f1fe5c1d7b4442976b"
@@ -1463,6 +1518,14 @@ argparse@^1.0.7:
   dependencies:
     sprintf-js "~1.0.2"
 
+arr-diff@^1.0.1:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/arr-diff/-/arr-diff-1.1.0.tgz#687c32758163588fef7de7b36fabe495eb1a399a"
+  integrity sha1-aHwydYFjWI/vfeezb6vklesaOZo=
+  dependencies:
+    arr-flatten "^1.0.1"
+    array-slice "^0.2.3"
+
 arr-diff@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/arr-diff/-/arr-diff-2.0.0.tgz#8f3b827f955a8bd669697e4a4256ac3ceae356cf"
@@ -1493,6 +1556,11 @@ arr-map@^2.0.0, arr-map@^2.0.2:
   integrity sha1-Onc0X/wc814qkYJWAfnljy4kysQ=
   dependencies:
     make-iterator "^1.0.0"
+
+arr-union@^2.0.1:
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/arr-union/-/arr-union-2.1.0.tgz#20f9eab5ec70f5c7d215b1077b1c39161d292c7d"
+  integrity sha1-IPnqtexw9cfSFbEHexw5Fh0pLH0=
 
 arr-union@^3.1.0:
   version "3.1.0"
@@ -1551,6 +1619,11 @@ array-last@^1.1.1:
   integrity sha512-eOCut5rXlI6aCOS7Z7kCplKRKyiFQ6dHFBem4PwlwKeNFk2/XxTrhRh5T9PyaEWGy/NHTZWbY+nsZlNFJu9rYg==
   dependencies:
     is-number "^4.0.0"
+
+array-slice@^0.2.3:
+  version "0.2.3"
+  resolved "https://registry.yarnpkg.com/array-slice/-/array-slice-0.2.3.tgz#dd3cfb80ed7973a75117cdac69b0b99ec86186f5"
+  integrity sha1-3Tz7gO15c6dRF82sabC5nshhhvU=
 
 array-slice@^1.0.0:
   version "1.1.0"
@@ -1866,6 +1939,11 @@ boolbase@^1.0.0, boolbase@~1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/boolbase/-/boolbase-1.0.0.tgz#68dff5fbe60c51eb37725ea9e3ed310dcc1e776e"
   integrity sha1-aN/1++YMUes3cl6p4+0xDcwed24=
+
+bourbon@^6.0.0:
+  version "6.0.0"
+  resolved "https://registry.yarnpkg.com/bourbon/-/bourbon-6.0.0.tgz#41ad318371128888261a390bebe0e9e89daaa01e"
+  integrity sha512-Skds0R1+GY3c1oBddh9BggYVq39Uo4ySvW33zttPk+4+nfGYpbZqwaDwENkbtV7PYhCk0ctTFkzfTNFv5365ag==
 
 boxen@^0.6.0:
   version "0.6.0"
@@ -4043,6 +4121,13 @@ express@^4.14.0:
     utils-merge "1.0.1"
     vary "~1.1.2"
 
+extend-shallow@^1.1.2:
+  version "1.1.4"
+  resolved "https://registry.yarnpkg.com/extend-shallow/-/extend-shallow-1.1.4.tgz#19d6bf94dfc09d76ba711f39b872d21ff4dd9071"
+  integrity sha1-Gda/lN/AnXa6cR85uHLSH/TdkHE=
+  dependencies:
+    kind-of "^1.1.0"
+
 extend-shallow@^2.0.1:
   version "2.0.1"
   resolved "https://registry.yarnpkg.com/extend-shallow/-/extend-shallow-2.0.1.tgz#51af7d614ad9a9f610ea1bafbb989d6b1c56890f"
@@ -4962,6 +5047,14 @@ gulp-cli@^2.2.0:
     semver-greatest-satisfied-range "^1.1.0"
     v8flags "^3.0.1"
     yargs "^7.1.0"
+
+gulp-flatten@^0.4.0:
+  version "0.4.0"
+  resolved "https://registry.yarnpkg.com/gulp-flatten/-/gulp-flatten-0.4.0.tgz#d9ac819416c30fd5dfb3dea9da79c83a1bcd61d1"
+  integrity sha512-eg4spVTAiv1xXmugyaCxWne1oPtNG0UHEtABx5W8ScLiqAYceyYm6GYA36x0Qh8KOIXmAZV97L2aYGnKREG3Sg==
+  dependencies:
+    plugin-error "^0.1.2"
+    through2 "^2.0.0"
 
 gulp-postcss@^8.0.0:
   version "8.0.0"
@@ -6175,6 +6268,11 @@ jxLoader@*:
     moo-server "1.3.x"
     promised-io "*"
     walker "1.x"
+
+kind-of@^1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/kind-of/-/kind-of-1.1.0.tgz#140a3d2d41a36d2efcfa9377b62c24f8495a5c44"
+  integrity sha1-FAo9LUGjbS78+pN3tiwk+ElaXEQ=
 
 kind-of@^2.0.1:
   version "2.0.1"
@@ -8166,6 +8264,17 @@ pkg-dir@^3.0.0:
   integrity sha512-/E57AYkoeQ25qkxMj5PBOVgF8Kiu/h7cYS30Z5+R7WaiCCBfLq58ZI/dSeaEKb9WVJV5n/03QwrN3IeWIFllvw==
   dependencies:
     find-up "^3.0.0"
+
+plugin-error@^0.1.2:
+  version "0.1.2"
+  resolved "https://registry.yarnpkg.com/plugin-error/-/plugin-error-0.1.2.tgz#3b9bb3335ccf00f425e07437e19276967da47ace"
+  integrity sha1-O5uzM1zPAPQl4HQ34ZJ2ln2kes4=
+  dependencies:
+    ansi-cyan "^0.1.1"
+    ansi-red "^0.1.1"
+    arr-diff "^1.0.1"
+    arr-union "^2.0.1"
+    extend-shallow "^1.1.2"
 
 plugin-error@^1.0.1:
   version "1.0.1"

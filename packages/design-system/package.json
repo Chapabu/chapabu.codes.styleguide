@@ -10,15 +10,12 @@
     "url": "git+https://github.com/Chapabu/chapabu.codes.git"
   },
   "scripts": {
-    "fractal": "fractal",
     "fractal:start": "fractal start",
     "fractal:build": "fractal build",
     "styles:build": "gulp styles:compile",
-    "styles:lint": "gulp styles:lint",
     "styles:watch": "gulp styles:watch",
-    "lint": "run-p *:lint",
-    "build": "npm-run-all lint -p \"!(fractal)*:build\" -s fractal:build",
-    "start": "run-p *:watch fractal:start",
+    "build": "run-s \"gulp build\" fractal:build",
+    "start": "run-p \"gulp\" fractal:start",
     "gulp": "gulp"
   },
   "browserslist": [
@@ -32,12 +29,14 @@
     "@frctl/fractal": "^1.2.0",
     "@frctl/nunjucks": "^2.0.1",
     "@frctl/twig": "^1.0.0-beta.5",
+    "bourbon": "^6.0.0",
     "cssnano": "^4.1.10",
     "eslint": "^6.1.0",
     "eslint-config-airbnb-base": "^14.0.0",
     "eslint-config-prettier": "^6.3.0",
     "eslint-plugin-import": "^2.18.2",
     "gulp": "^4.0.2",
+    "gulp-flatten": "^0.4.0",
     "gulp-postcss": "^8.0.0",
     "gulp-sass": "^4.0.2",
     "gulp-sourcemaps": "^2.6.5",
@@ -51,5 +50,8 @@
     "postcss-preset-env": "^6.7.0",
     "prettier": "^1.18.2",
     "stylelint": "^10.0.0"
+  },
+  "dependencies": {
+    "@frctl/fractal": "^1.2.1-beta.1"
   }
 }
