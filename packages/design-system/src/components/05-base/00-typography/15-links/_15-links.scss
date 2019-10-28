@@ -1,0 +1,28 @@
+a {
+  color: $c-primary;
+  text-decoration: none;
+
+  &:focus,
+  &:hover {
+    text-decoration: underline;
+    text-decoration-thickness: 0.111em;
+  }
+}
+
+.main-nav-link {
+  display: inline-block;
+  color: unset;
+
+  &.is-active,
+  &:focus,
+  &:hover {
+    text-decoration: none;
+
+    &::after {
+      display: block;
+      height: 2px;
+      background-color: $c-primary;
+      content: '';
+    }
+  }
+}
