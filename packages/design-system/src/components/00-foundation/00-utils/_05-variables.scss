@@ -23,6 +23,7 @@ $bourbon: (
 /// #TYPOGRAPHY
 ///
 $f-family-raleway: 'Raleway', $font-stack-helvetica;
+$f-family-londrina: 'Londrina Solid', $f-family-raleway;
 $scale-100: modular-scale(-1);
 $scale-200: modular-scale(0);
 $scale-300: modular-scale(1);
