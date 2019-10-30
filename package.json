@@ -1,22 +1,30 @@
 {
-  "name": "@chapabu/codes.root",
+  "name": "@chapabu/codes.styleguide",
   "version": "1.0.0",
-  "description": "Monorepo for personal site.",
+  "description": "Vanilla design system for chapabu.codes.",
   "main": "index.js",
-  "repository": "git@github.com:Chapabu/chapabu.codes.git",
+  "repository": "git+https://github.com/Chapabu/chapabu.codes.git",
   "author": "Matt Chapman <chapabu101@gmail.com>",
   "license": "MIT",
-  "private": true,
-  "workspaces": {
-    "packages": [
-      "packages/*"
-    ],
-    "nohoist": [
-      "**/normalize.css",
-      "**/modern-css-reset"
-    ]
+  "scripts": {
+    "fractal:start": "fractal start",
+    "fractal:build": "fractal build",
+    "styles:build": "sass src/components/main.scss dist/assets/styles/main.css",
+    "styles:watch": "sass src/components/main.scss dist/assets/styles/main.css --watch"
   },
   "devDependencies": {
-    "lerna": "^3.16.4"
-  }
+    "@chapabu/stylelint-scss": "^1.0.0",
+    "@frctl/fractal": "^1.2.1-beta.1",
+    "@frctl/nunjucks": "^2.0.1",
+    "@frctl/twig": "^1.0.0-beta.5",
+    "bourbon": "^6.0.0",
+    "eslint": "^6.6.0",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-config-prettier": "^6.5.0",
+    "eslint-plugin-import": "^2.18.2",
+    "modern-css-reset": "^1.0.4",
+    "sass": "^1.23.1",
+    "stylelint": "^10.0.0"
+  },
+  "dependencies": {}
 }
