@@ -8,17 +8,21 @@
   "license": "MIT",
   "scripts": {
     "fractal:start": "fractal start",
-    "fractal:build": "fractal build"
+    "fractal:build": "fractal build",
+    "styles:build": "sass src/components/main.scss dist/assets/styles/main.css",
+    "styles:watch": "sass src/components/main.scss dist/assets/styles/main.css --watch"
   },
   "devDependencies": {
-    "@chapabu/stylelint": "^1.0.0",
+    "@chapabu/stylelint-scss": "^1.0.0",
     "@frctl/fractal": "^1.2.1-beta.1",
     "@frctl/nunjucks": "^2.0.1",
     "@frctl/twig": "^1.0.0-beta.5",
+    "bourbon": "^6.0.0",
     "eslint": "^6.6.0",
     "eslint-config-airbnb-base": "^14.0.0",
     "eslint-config-prettier": "^6.5.0",
     "eslint-plugin-import": "^2.18.2",
+    "modern-css-reset": "^1.0.4",
     "sass": "^1.23.1",
     "stylelint": "^10.0.0"
   },

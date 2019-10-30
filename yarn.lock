@@ -124,6 +124,13 @@
     lodash "^4.17.13"
     to-fast-properties "^2.0.0"
 
+"@chapabu/stylelint-scss@^1.0.0":
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/@chapabu/stylelint-scss/-/stylelint-scss-1.0.0.tgz#ecefb01b7396b43651e52acd3f6b7f1881c5b21b"
+  integrity sha512-m+nQsUPGytIp6yA9w3gr4ViL6eknFsETAII0KaiLDV2fVaXRfrGS3vmXsI7xTLjdNvGtycs/ufUIZF3A5ScfWA==
+  dependencies:
+    "@chapabu/stylelint" "^1.0.0"
+
 "@chapabu/stylelint@^1.0.0":
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/@chapabu/stylelint/-/stylelint-1.0.0.tgz#02fd8c028c69f28a965147131b62fed5b7fb9bca"
@@ -7312,6 +7319,11 @@ mocha@^5.0.3:
     minimatch "3.0.4"
     mkdirp "0.5.1"
     supports-color "5.4.0"
+
+modern-css-reset@^1.0.4:
+  version "1.0.4"
+  resolved "https://registry.yarnpkg.com/modern-css-reset/-/modern-css-reset-1.0.4.tgz#4a1fff644cd0b314b048db23e16bccb9b7411caf"
+  integrity sha512-HspLib3vUdgdGNV9JcBrQXlqiWB/tGr9oMaSiqGR7+J1kQmJbxlZzp/3ufDR3lZLwDlWDuMh2VtvSY+Aa0xNow==
 
 modify-values@^1.0.0:
   version "1.0.1"

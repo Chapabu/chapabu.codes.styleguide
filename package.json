@@ -12,7 +12,8 @@
       "packages/*"
     ],
     "nohoist": [
-      "**/normalize.css"
+      "**/normalize.css",
+      "**/modern-css-reset"
     ]
   },
   "devDependencies": {

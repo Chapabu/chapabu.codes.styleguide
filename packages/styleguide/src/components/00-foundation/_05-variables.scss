@@ -1,0 +1,18 @@
+// -----------------------------------------------------------------------------
+// This file contains default project variables.
+// -----------------------------------------------------------------------------
+
+/**
+ * CONTENTS
+ *
+ * 00. Scale          - #SCALE
+ * 01. Typography     - #TYPOGRAPHY
+ * 02. Colours        - #COLOURS
+ */
+
+///
+/// #TYPOGRAPHY
+///
+
+$f-family-raleway: 'Raleway', $font-stack-helvetica;
+$f-family-londrina: 'Londrina Solid', $f-family-raleway;
